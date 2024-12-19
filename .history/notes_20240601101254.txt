@@ -1,0 +1,41 @@
+when we want to fetch records based on a specific condition we use where
+syntax: ::when(first value to be matched,second value to be matched)
+
+when we want to fetch one row only we use ->first()
+
+when we want to fetch many records we use ->get()
+
+
+
+soft deletes:انى امسح row من ال view يعنى انو مش هيظهر للusers بس بيفضل موجود فل Database
+بضيف فالmigration column جديد اسمو deleted_at اول ما بمسح بيتضاف الوقت اللى مسحت فيه فالcolumn دا و بتختفى من ال view.
+
+
+
+لو مش عايزة اكتب الurl بتاع الroute كلو كل مرة ممكن اديله اسم:
+بوصل للاسم من خلال {{route('route_name')}}-------->127.0.0.1/route_name
+لو فى مشكلة فالroute ممكن اروح على Url بديل:{{route('route_name,'test')}}-------->127.0.0.1/test
+
+
+
+forceDelete()------>delete permanantally form the database 
+delete()---->applying soft delete 
+
+
+
+لو عايزة اعمل add او اى action تانى من غير ما يحصل refresh او اروح لصفحة تانية :
+1-ajax(javascript)
+2-livewire  :When an interaction occurs, Livewire makes an AJAX request to the server with the updated data.
+The server re-renders the component and responds with the new HTML.
+Livewire then intelligently mutates DOM according to the things that changed.
+
+
+Remember:number_format function-------->بتخلر الرقم يظهر بالشكل اللى احدده زى العلامات العشرية
+ex: number_format(26000.00,2)--->كدا العلامة العشرية هتبقى بعد اول رقمين---->
+26,000.00
+
+Creating notofications in laravel:php artisan make:notofication InvoiceCreated
+
+Mail Notifications : 
+the email message can be formatted using blades
+or in the notification tha was created 

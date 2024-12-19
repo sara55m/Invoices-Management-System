@@ -1,0 +1,16 @@
+<?php
+return [
+    'notifications'=>'الاشعارات',
+    'mark_all'=>'قراءة الكل',
+    'you_have'=>'لديك',
+    'unread_notifications'=>'اشعارات غير مقروءة',
+    'mark'=>'تمييز كمقروءة',
+    'Profile'=>'الملف الشخصى',
+    'EditProfile'=>'تعديل الملف الشخصى',
+    'SignOut'=>'تسجيل خروج',
+    'Invoices App'=>'تطبيق ادارة الفواتير',
+    'Home Page'=>'الصفحة الرئيسية',
+
+
+];
+?>

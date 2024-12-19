@@ -1,0 +1,17 @@
+when we want to fetch records based on a specific condition we use where
+syntax: ::when(first value to be matched,second value to be matched)
+
+when we want to fetch one row only we use ->first()
+
+when we want to fetch many records we use ->get()
+
+
+
+soft deletes:انى امسح row من ال view يعنى انو مش هيظهر للusers بس بيفضل موجود فل Database
+بضيف فالmigration column جديد اسمو deleted_at اول ما بمسح بيتضاف الوقت اللى مسحت فيه فالcolumn دا و بتختفى من ال view.
+
+
+
+لو مش عايزة اكتب الurl بتاع الroute كلو كل مرة ممكن اديله اسم:
+بوصل للاسم من خلال {{route('route_name')}}
+لو فى مشكلة فالroute ممكن اطبع كلمة :{{route('','test')}}

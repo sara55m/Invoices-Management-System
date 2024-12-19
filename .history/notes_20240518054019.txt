@@ -1,0 +1,6 @@
+when we want to fetch records based on a specific condition we use where
+syntax: ::when(first value to be matched,second value to be matched)
+
+when we want to fetch one row only we use ->first()
+
+when we want to fetch many records we use ->get()
